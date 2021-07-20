@@ -9,6 +9,7 @@ export const colors = {
     
     supportColors: {
         primary:  'rgba(0, 188, 210, 1)',
+        white1: '#FFF',
     },
     
     specificColors: {
