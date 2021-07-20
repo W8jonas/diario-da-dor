@@ -13,7 +13,7 @@ import { colors } from "../../styles/colors"
 
 export function HowYou() {
     return (
-        <View style={{paddingVertical: 30, flex: 1, justifyContent: 'space-between'}}>
+        <View style={{paddingVertical: 24, flex: 1, justifyContent: 'space-between'}}>
             <View style={styles.container}>
                 <Text style={{color: colors.supportColors.white1, fontSize: 20}}>
                     Cadastro
