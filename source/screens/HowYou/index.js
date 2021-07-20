@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
+import { styles } from './styles'
+import { colors } from "../../styles/colors"
 
 // Modules
 
@@ -11,9 +13,11 @@ import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 
 export function HowYou() {
     return (
-        <View style={{paddingHorizontal: 20, paddingVertical: 30, flex: 1, justifyContent: 'space-between'}}>
-            <View>
-                <Text>Cadastro</Text>
+        <View style={{paddingVertical: 30, flex: 1, justifyContent: 'space-between'}}>
+            <View style={styles.container}>
+                <Text style={{color: colors.supportColors.white1, fontSize: 20}}>
+                    Cadastro
+                </Text>
             </View>
 
             <View>
