@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 import { styles } from './styles'
 import { colors } from "../../styles/colors"
+import { Progress } from './components/Progress'
+import { FooterButton } from './components/FooterButton'
 
 // Modules
 
@@ -13,7 +15,7 @@ import { colors } from "../../styles/colors"
 
 export function HowYou() {
     return (
-        <View style={{paddingVertical: 24, flex: 1, justifyContent: 'space-between'}}>
+        <View style={{paddingTop: 24, paddingBottom: 10, flex: 1, justifyContent: 'space-between'}}>
             <View style={styles.container}>
                 <Text style={{color: colors.supportColors.white1, fontSize: 20}}>
                     Cadastro
@@ -25,13 +27,17 @@ export function HowYou() {
             </View>
 
             <View>
-                <View>
-                    <Text>progress</Text>
-                </View>
+                <Progress />
 
-                <View>
-                    <Text> {'<'} </Text>
-                    <Text> {'>'} </Text>
+                <View style={{flexDirection: 'row', justifyContent: 'space-around', paddingTop: 10}}>
+                    <FooterButton
+                        label='<'
+                        onPress={() => {}}
+                    />
+                    <FooterButton
+                        label='>'
+                        onPress={() => {}}
+                    />
                 </View>
             </View>
 
